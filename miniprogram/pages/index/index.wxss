@@ -1,0 +1,137 @@
+.top-bar{
+  padding-top: 3rem;
+  padding-left: 5%;
+  margin-top: 2rem;
+  position: relative;
+  display: block;
+}
+
+.btn{
+  height: 3rem;
+  width: 3rem;
+  border-radius:50%;
+  background-color: #ffffff;
+  box-shadow: 0 5px 20px rgba(250, 250, 250, 1);
+}
+
+.icon{
+  margin-left: 0.56rem;
+  padding-top: 0.5rem;
+}
+
+.shop-sign{
+  position: relative;
+  display: block;
+  text-align:center;
+}
+
+.shop-title{
+  color: #BCBCBC;
+  font-size: small;
+}
+
+.shop-icon{
+  padding-top: 0.2rem;
+  text-align:right;
+}
+
+.shop-name{
+  padding-top: 0.2rem;
+  position: relative;
+  display: block;
+  text-align:center;
+  font-size: 1em;
+  margin-right: 25px;
+}
+
+.swip-row{
+  margin-top: 1rem;
+  text-align:center;
+  position: relative;
+  display: block;
+}
+ 
+.swipercontainer {
+  position: relative;
+  display: block;
+  left: 5%;
+  right: 0rpx;
+  width: 90%;
+  background: #FDFDFD;
+}
+ 
+.swipimg {
+  width: 100%;
+  height: 100%;
+}
+
+.foodlist-title{
+  margin-left: 5%;
+  margin-top: 1rem;
+  position: relative;
+  display: block;
+  font-size: 1.3em;
+}
+
+.foodlist{
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;    
+  justify-content: space-between;
+}
+
+.fooditem{
+  width: 33vw;
+  height: 33vw;
+  box-sizing: border-box;
+  background-color: lightblue;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; 
+  margin-top: 1px;
+}
+
+.scrollView {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  padding-right: 5%;
+  padding-left: 5%;
+  justify-content: space-between;
+}
+
+.content {
+  width: 44vw;
+  height: 50vw;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  background-color: #636263;
+  justify-content: center; 
+  margin-top: 0.5rem;
+  border-radius:1rem;
+  box-shadow: 0 5px 20px rgba(250, 250, 250, 1);
+  padding: 0.4rem;
+  background-color: #636263;
+}
+
+.right-tips{
+  color:#636263;
+  font-size: 0.5em;
+}
+
+.mark{
+  position: relative;
+}
+
+.image{
+  position: relative;
+  width: 100%;
+  display: block;
+  top: 0;
+  margin-top: 0;
+  padding: 0;
+}

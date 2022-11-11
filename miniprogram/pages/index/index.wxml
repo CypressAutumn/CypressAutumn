@@ -1,0 +1,49 @@
+<!--index.wxml-->
+<i-row class="top-bar">
+    <i-col span="6" i-class="col-class">
+        <view class="btn">
+            <view  class="icon">
+                <i-icon type="shop_fill" size="30" color="#000000" />
+            </view>
+        </view>
+    </i-col>
+    <i-col span="12"  i-class="col-class" class="shop-sign">
+        <i-row class="shop-title">店 铺</i-row>
+        <i-row class="shop-name">
+            <i-icon type="coordinates_fill" size="25" color="#FF2827"/>
+            <text>阿焱羊肉面</text>
+        </i-row>
+    </i-col>
+</i-row>
+<i-row class="swip-row">
+    <!--图片轮播 -->
+    <view class='swipercontainer'>
+        <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" vertical='{{vertical}}' circular='{{circular}}'>
+            <block wx:for="{{imgUrls}}">
+                <swiper-item>
+                    <image src="{{item}}" class="slide-image swipimg"/>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+</i-row>
+<i-row class="foodlist-title">
+    <i-col span="20">
+        <text >人气排行</text>
+    </i-col>
+    <i-col span="4">
+        <text class="right-tips">更多</text>
+    </i-col>
+</i-row>
+<!-- 页面内容超出屏幕时可滑动 -->
+<scroll-view scroll-y="true">
+    <view class="scrollView">
+      <view class="content" wx:for="{{items}}" wx:key="index">
+        <view class="mark">4.5</view>
+        <image class="image" src="{{items[index]['image']}}" mode="aspectFit"></image>
+        <!--
+        <text>{{items[index]['name']}}</text>
+        -->
+      </view>
+    </view>
+</scroll-view>
